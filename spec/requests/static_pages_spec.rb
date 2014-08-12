@@ -8,7 +8,7 @@ feature "Static pages" do
     end
     scenario "should have the right title" do
       visit '/static_pages/home'
-      expect(page).to have_selector('title', :text => "Ruby on Rails Tutorial Sample App | Home")
+      expect(page).to have_selector('title', text: "Ruby on Rails Tutorial Sample App | Home")
     end
   end
 
@@ -19,7 +19,7 @@ feature "Static pages" do
     end
     scenario "should have the right title" do
       visit '/static_pages/help'
-      expect(page).to have_selector('title', :text => "Ruby on Rails Tutorial Sample App | Help")
+      expect(page).to have_selector('title', text: "Ruby on Rails Tutorial Sample App | Help")
     end
   end
 
@@ -30,7 +30,7 @@ feature "Static pages" do
     end
     scenario "should have the right title" do
       visit '/static_pages/about'
-      expect(page).to have_selector('title', :text => "Ruby on Rails Tutorial Sample App | About Us")
+      expect(page).to have_selector('title', text: "Ruby on Rails Tutorial Sample App | About Us")
     end
   end
 
@@ -41,7 +41,7 @@ feature "Static pages" do
     end
     scenario "should have the right title" do
       visit '/static_pages/contact'
-      expect(page).to have_selector('title', :text => "Ruby on Rails Tutorial Sample App | Contact Us")
+      expect(page).to have_selector('title', text: "Ruby on Rails Tutorial Sample App | Contact Us")
     end
   end
 
